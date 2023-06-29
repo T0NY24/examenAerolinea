@@ -1,6 +1,6 @@
 
 var pasajero = require('../models/pasajero');
-var pasajero = require('../models/reserva');
+var reserva = require('../models/reserva');
 
 
 const crearReserva = async (req, res) => {

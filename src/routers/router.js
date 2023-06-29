@@ -5,7 +5,7 @@ const {crearAeropuerto,obtenerAeropuertos,actualizaraeropuerto,eliminaraAeropuer
 const {crearVuelo,obtenerVuelos,eliminarVuelo,actualizarVuelo} = require('../controllers/vueloController');
 const {crearReserva,obtenerReserva,eliminarReserva,actualizarReserva} = require('../controllers/reservaController');
 //Rutas Pasajeros
-router.get('/pasejeros', obtenerpasajero);
+router.get('/pasajeros', obtenerpasajero);
 router.post('/pasajeros', crearPasajero);
 router.get('/pasajeros/:id', obtenerPasajero);
 router.put('/pasajeros/:id', actualizarPasajero);
@@ -14,7 +14,7 @@ router.delete('/pasajeros/:id', eliminarPasajero);
 
 //Rutas Aeropuertos
 router.get('/aeropuertos', obtenerAeropuertos);
-router.post('/preferencias', crearAeropuerto);
+router.post('/aeropuerto', crearAeropuerto);
 router.put('/aeropuerto/:id', actualizaraeropuerto);
 router.delete('/aeropuerto/:id',eliminaraAeropuerto);
 

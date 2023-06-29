@@ -7,7 +7,7 @@ const crearPasajero = async (req, res) => {
   
 
     try {
-      const nuevaPasajero = await persona.create({ nombres,apellidos,edad,genero,descripcion,telefono});
+      const nuevaPasajero = await pasajero.create({ nombres,apellidos,edad,genero,descripcion,telefono});
       res.json(nuevaPasajero);
     } catch (error) {
       res.status(500).json({ error: 'Error al crear el pasajero' });
